@@ -8,11 +8,10 @@ import (
 	"syscall"
 	"time"
 
-	internalhttp "github.com/samaelkorn/internal/http"
+	internalhttp "github.com/samaelkorn/fenrir/internal/http"
 )
 
 func main() {
-
 	server := internalhttp.NewServer("localhost", "6078")
 
 	ctx, cancel := signal.NotifyContext(context.Background(),
